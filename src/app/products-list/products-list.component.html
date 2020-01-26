@@ -1,50 +1,20 @@
-<div class="products-list py-5">
-  <div class="container">
-    <div class="row">
-      <div class="col-4 mb-4">
-        <div class="card" style="width: 18rem;">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+<div class="row">
+  <div class="col-3 mb-4" *ngFor="let product of loadedProducts">
+    <div class="card">
+      <div class="card-body">
+        <div class="img-wrapper">
+          <img src="../assets/images/1.svg" alt="img">
+          <div class="sale">-25%</div>
+          <div class="product-actions">
+            <a href="" class="compare"></a>
+            <a href="" class="like"></a>
           </div>
         </div>
-      </div>
-      <div class="col-4 mb-4">
-        <div class="card" style="width: 18rem;">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-4 mb-4">
-        <div class="card" style="width: 18rem;">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-4 mb-4">
-        <div class="card" style="width: 18rem;">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-4 mb-4">
-        <div class="card" style="width: 18rem;">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
+        <h5 class="card-title text">{{ product.model }}</h5>
+        <p class="price">{{ product.averagePrice }}</p>
+        <a href="#" class="btn btn-primary">
+          Перейти к покупке
+        </a>
       </div>
     </div>
   </div>

@@ -1,1 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
+@import "customize-bootstrap.scss";
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+
+.side-bar {
+  width: 240px;
+}
+
+.card {
+  padding: 15px;
+  border: none;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.btn {
+  border-radius: 0;
+  height: 40px;
+  line-height: 40px;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  padding: 0 35px;
+  text-transform: uppercase;
+}
+
+.btn.btn-primary {
+  background-color: #E07E0B;
+  border: none;
+}
+
+.text, p {
+  font-size: 13px;
+  line-height: 18px;
+}

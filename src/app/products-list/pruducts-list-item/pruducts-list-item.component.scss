@@ -1,0 +1,27 @@
+.img-wrapper {
+  position: relative;
+
+  .sale {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: #E07E0B;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 29px;
+  }
+}
+
+.product-actions {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  a {
+    display: flex;
+    height: 16px;
+    width: 16px;
+    margin-left: 12px;
+  }
+}
